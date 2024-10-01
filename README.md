@@ -81,7 +81,7 @@ Below are some screenshots illustrating the annotations done using RoboFlow:
 Open command prompt in the project's folder
 1. Clone repository 
   ```sh
-  git clone https://github.com/
+  git clone https://github.com/tmsherazi-psu/AgriVision_Project
   ```
 2. Goto the project's folder
   ```sh

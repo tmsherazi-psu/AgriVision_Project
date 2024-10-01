@@ -61,10 +61,12 @@ You can access and download the annotated dataset from the following link:
 ### Screenshots
 Below are some screenshots illustrating the annotations done using RoboFlow:
 
-![Screenshot 1](https://github.com/ImranRiazChohan/Medina_Hackathon_Dates/blob/main/assets/class_1.PNG)  
+![Screenshot 1](
+https://github.com/tmsherazi-psu/AgriVision_Project/blob/main/assets/class_1.PNG) 
 *Example of a palm tree affected by **Black-Scorc**h*
 
-![Screenshot 2](https://github.com/ImranRiazChohan/Medina_Hackathon_Dates/blob/main/assets/class_2.PNG)  
+![Screenshot 2](
+https://github.com/tmsherazi-psu/AgriVision_Project/blob/main/assets/class_2.PNG)  
 *Example of a palm trees affected by **Parlatoria_Blanchardi***
 
 ## Getting Started

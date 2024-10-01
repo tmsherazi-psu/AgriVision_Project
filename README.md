@@ -56,7 +56,7 @@ The palm tree disease dataset includes images of various palm trees affected by 
 ### Data Access
 You can access and download the annotated dataset from the following link:
 
-[Download Palm Tree Disease Dataset](https://universe.roboflow.com/imran-riaz-chohan/dates_leaves_disease_seg_dataset/dataset/1)
+[Download Palm Tree Disease Annotated Dataset](drive-link)
 
 ### Screenshots
 Below are some screenshots illustrating the annotations done using RoboFlow:
@@ -66,9 +66,6 @@ Below are some screenshots illustrating the annotations done using RoboFlow:
 
 ![Screenshot 2](https://github.com/ImranRiazChohan/Medina_Hackathon_Dates/blob/main/assets/class_2.PNG)  
 *Example of a palm trees affected by **Parlatoria_Blanchardi***
-
-![Screenshot 2](https://github.com/ImranRiazChohan/Medina_Hackathon_Dates/blob/main/assets/roboflow_1.PNG) 
-*Overview of the annotation process in RoboFlow*
 
 ## Getting Started
 

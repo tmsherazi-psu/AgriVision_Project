@@ -80,7 +80,7 @@ Develop an AI-driven chatbot that farmers can interact with to seek advice on Pa
 This repository contains a dataset focused on palm tree diseases, which has been annotated for use in machine learning applications. The dataset aims to support research and development in the identification and treatment of diseases affecting palm trees.
 
 ### Original Dataset
-The original dataset was sourced from [dataset](https://drive.google.com/drive/folders/1GsEGFi5REM1Lc0185RKKpVc9CjqOf68D?usp=sharing). It includes a wide range of images showcasing various conditions affecting palm trees.
+The original dataset was sourced from [dataset](https://drive.google.com/drive/folders/1ODlg2UIIKe7CMj9CJQ2TObdjFQox9rRU). It includes a wide range of images showcasing various conditions affecting palm trees.
 
 ## Dataset Description
 The palm tree disease dataset includes images of various palm trees affected by different diseases. Each image has been annotated to highlight the symptoms, allowing for better training of models that can identify these diseases in the wild.
@@ -93,7 +93,7 @@ The palm tree disease dataset includes images of various palm trees affected by 
 ### Data Access
 You can access and download the annotated dataset from the following link:
 
-[Download Palm Tree Disease Annotated Dataset](drive-link)
+[Download Palm Tree Disease Annotated Dataset](https://drive.google.com/drive/folders/1AS2daVUq0s3dPwLsQIPrP7xAUBy6gGVE)
 
 ### Screenshots
 Below are some screenshots illustrating the annotations done using RoboFlow:

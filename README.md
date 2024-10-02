@@ -157,6 +157,12 @@ Open command prompt in the project's folder
 
 https://github.com/user-attachments/assets/d299fb32-171f-4229-a73c-71c50c1bb3ec    
 
+## Model Train Notebook Video
+
+
+https://github.com/user-attachments/assets/0930b3ac-58a7-47e9-ad15-0941bec04a96
+
+
 
 ## Languages & Tools
 This section shows the frameworks and libraries utilized in the project. 

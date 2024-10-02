@@ -5,7 +5,44 @@
     <p align="center">
     An Smart Solutions for Disease Prevention and Crop Health Optimization
     <br />
+  </p>    An Smart Solutions for Disease Prevention and Crop Health Optimization
+    <br />
   </p>
+</div>
+</div>
+<br>
+
+## Problem Statement
+Despite advancements in agricultural technology, farmers face significant challenges in the early detection and management of plant diseases, leading to substantial crop losses. Current methods often struggle with issues such as noise reduction, effective feature extraction, and redundant data elimination, resulting in inefficient disease identification and delayed interventions. Moreover, there is a pressing need for deep learning models that are not only effective but also efficient, with fewer parameters and faster training times. This research seeks to address these challenges by integrating advanced AI techniques—specifically, **YOLOv8** for disease detection and **LLama3** for preventive recommendations—aimed at revolutionizing disease management in Palm date farming and ensuring a sustainable agricultural future.
+
+## Objective
+The primary objective of this research is to develop and implement advanced deep learning models for the early detection, classification, and prevention of Palm leaf diseases, utilizing **YOLOv8** for precise disease detection and **LLama3** for decision support. The goal is to enhance agricultural practices by providing farmers with real-time recommendations and automated solutions that improve crop management efficiency, reduce crop losses, and promote sustainable date farming.
+
+## Features
+
+### Real-Time Image Segmentation for Disease Detection and Prevention
+
+**Description:**  
+Develop a deep learning model that utilizes image segmentation techniques to identify and classify Palm leaf diseases from images. The model will analyze segmented areas of the leaf to provide detailed insights into the disease's extent and severity.
+
+**Features:**
+- **Image Input Analysis:** Users can upload images of Palm leaves, which the model will segment to highlight affected areas.
+- **Prevention and Precaution Recommendations:** Based on the disease detected, the system generates tailored recommendations for prevention and treatment, including appropriate fungicides, watering techniques, and environmental adjustments.
+- **User-Friendly Interface:** An easy-to-navigate platform for farmers to access disease information and recommendations.
+
+### AI-Powered Chatbot for Decision Support
+
+**Description:**  
+Develop an AI-driven chatbot that farmers can interact with to seek advice on Palm leaf disease management. This chatbot will be powered by the LLama3 model, offering conversational support based on user queries.
+
+**Features:**
+- **Interactive Q&A:** Farmers can ask questions related to disease identification, treatment options, and best practices for prevention.
+
+
+## Palm Tree Disease Dataset
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+Attach files by dragging & dropping, selecting or pasting them.
+
 </div>
 </div>
 <br>

@@ -69,6 +69,8 @@ https://github.com/tmsherazi-psu/AgriVision_Project/blob/main/assets/class_1.PNG
 https://github.com/tmsherazi-psu/AgriVision_Project/blob/main/assets/class_2.PNG)  
 *Example of a palm trees affected by **Parlatoria_Blanchardi***
 
+![data_annotation](https://github.com/user-attachments/assets/6c70173d-b8a7-480a-b9f6-7e8b1a1909fa)
+
 ## Preparing a custom dataset on Roboflow
 
 Building a custom dataset can be a painful process. It might take dozens or even hundreds of hours to collect images, label them, and export them in the proper format. Fortunately, Roboflow makes this process as straightforward and fast as possible. Let me show you how!

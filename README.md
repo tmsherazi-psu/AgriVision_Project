@@ -162,7 +162,12 @@ https://github.com/user-attachments/assets/d299fb32-171f-4229-a73c-71c50c1bb3ec
 
 https://github.com/user-attachments/assets/0930b3ac-58a7-47e9-ad15-0941bec04a96
 
+## Model Results
+*Confusion Matrix & Result*
 
+![confusion_matrix (3)](https://github.com/user-attachments/assets/2f6c3d62-4e04-4a1b-aa39-9bd3c8e1e15a)
+
+![results (1)](https://github.com/user-attachments/assets/bedfb40b-da60-4ca3-b8b1-43a6b0b00dfc)
 
 ## Languages & Tools
 This section shows the frameworks and libraries utilized in the project. 

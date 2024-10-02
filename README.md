@@ -79,13 +79,6 @@ Building a custom dataset can be a painful process. It might take dozens or even
 
 Before you start, you need to create a Roboflow [account](https://app.roboflow.com/login). Once you do that, you can create a new project in the Roboflow [dashboard](https://app.roboflow.com/). Keep in mind to choose the right project type. In our case, Object Detection.
 
-<div align="center">
-  <img
-    width="640"
-    src=""
-  >
-</div>
-
 ### Step 2: Uploading images
 
 Next, add the data to your newly created project. You can do it via API or through our [web interface](https://docs.roboflow.com/adding-data/object-detection).

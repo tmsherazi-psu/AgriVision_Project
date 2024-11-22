@@ -76,6 +76,7 @@ def precaution_convert_into_arabic(api,parameters):
 os.environ["GROQ_API_KEY"]="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"
 
 model=  YOLO('best_seg.pt')
+red_model=YOLO("best_weevil.pt")
 
 
 st.set_page_config(
@@ -95,8 +96,9 @@ st.sidebar.image("AgriVision.png")
 
 
 on=st.sidebar.toggle("Arabic")
-options=st.sidebar.radio("File Upload",("Upload Image","Live Camera","AI-Agent"))
-if options=="Upload Image":
+options=st.sidebar.radio("File Upload",("Palm Disease Detection","Red Weevil Detection","Live Camera","AI-Agent"))
+
+if options=="Palm Disease Detection":
     st.title("Upload Palm Tree Leave Images")
     image=st.file_uploader("",type=['jpeg','png','jpg'])
     if image is not None:
@@ -289,6 +291,61 @@ if options=="Upload Image":
                         st.write(precaution)
             else:
                 placeholder.markdown('<h3>No Disease Detected!</h3>', unsafe_allow_html=True)
+
+
+
+
+if options=="Red Weevil Detection":
+    st.title("Upload Red Weevil Images")
+    image=st.file_uploader("",type=['jpeg','png','jpg'])
+    if image is not None:
+         # Read the uploaded file as an OpenCV image
+        file_bytes = np.asarray(bytearray(image.read()), dtype=np.uint8)
+        image = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
+        image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+        # Convert to grayscale
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+        image_width_pixels = 300
+        image_height_pixels = 300
+        # Define the pixel density (DPI)
+        dpi = 96
+         # Define the desired size
+        desired_size = (image_width_pixels, image_height_pixels)  # Width, Height
+
+
+        # Convert pixels to centimeters
+        image_width_cm = (image_width_pixels / dpi) * 2.54
+        image_height_cm = (image_height_pixels / dpi) * 2.54
+        # Resize both images
+        image_rgb_resized = cv2.resize(image_rgb, desired_size)
+        gray_image_resized = cv2.resize(gray_image, desired_size)
+        
+        results = list(red_model(image_rgb))  # Pass the RGB image to the model
+        # Access the first result (if there's only one image processed)
+        result = results[0]
+        class_names = result.names[0]
+        boxes = result.boxes
+
+        st.divider()
+        st.markdown('<h3>Image Analysis</h3>', unsafe_allow_html=True)
+
+        col1, col2, col3= st.columns(3)
+       
+
+        # Display the RGB image in the first column
+        with col1:
+            st.image(image_rgb_resized, channels="RGB", caption='RGB Image')
+
+        # Display the grayscale image in the second column
+        with col2:
+            st.image(gray_image_resized, caption='Grayscale Image')
+        with col3:
+            res_plotted = result.plot(line_width=1,labels=True)[:, :, ::-1]
+            class_caption = f"{class_names} disease detected"
+            st.image(res_plotted, caption=class_caption, use_column_width=True)
+
 
 
 elif options=="Live Camera":

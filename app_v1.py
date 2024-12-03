@@ -231,7 +231,7 @@ if options=="Palm Disease Detection":
         with col3:
             res_plotted = result.plot(line_width=1, labels=True)  # Ensure result is in RGB
             class_caption = f"'{class_name}' disease detected"
-            st.image(res_plotted, caption=class_caption, use_column_width=True)
+            st.image(res_plotted, caption=class_caption, use_container_width=True)
 
         # Create and display the binary mask in the fourth column
         with col4:
@@ -245,7 +245,7 @@ if options=="Palm Disease Detection":
                     resized_mask = cv2.resize(mask, (binary_mask.shape[1], binary_mask.shape[0]), interpolation=cv2.INTER_NEAREST)
                     binary_mask[resized_mask > 0] = 255  # Set mask areas to white
                 col3_diplay = True
-                st.image(binary_mask, caption='Affected Area', use_column_width=True)
+                st.image(binary_mask, caption='Affected Area', use_container_width=True)
                 
             else:
                 st.write("No objects detected.")
@@ -344,7 +344,7 @@ if options=="Red Weevil Detection":
         with col3:
             res_plotted = result.plot(line_width=1,labels=True)[:, :, ::-1]
             class_caption = f"{class_names} disease detected"
-            st.image(res_plotted, caption=class_caption, use_column_width=True)
+            st.image(res_plotted, caption=class_caption, use_container_width=True)
 
 
 
@@ -483,7 +483,7 @@ elif options=="Live Camera":
         with col3:
             res_plotted = result.plot(line_width=1, labels=True)  # Ensure result is in RGB
             class_caption = f"'{class_name}' disease detected"
-            st.image(res_plotted, caption=class_caption, use_column_width=True)
+            st.image(res_plotted, caption=class_caption, use_container_width=True)
 
         # Create and display the binary mask in the fourth column
         with col4:
@@ -497,7 +497,7 @@ elif options=="Live Camera":
                     resized_mask = cv2.resize(mask, (binary_mask.shape[1], binary_mask.shape[0]), interpolation=cv2.INTER_NEAREST)
                     binary_mask[resized_mask > 0] = 255  # Set mask areas to white
                 col3_diplay = True
-                st.image(binary_mask, caption='Affected Area', use_column_width=True)
+                st.image(binary_mask, caption='Affected Area', use_container_width=True)
                 
             else:
                 st.write("No objects detected.")
